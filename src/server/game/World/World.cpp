@@ -1224,6 +1224,10 @@ void World::LoadConfigSettings(bool reload)
     // Warden
     m_int_configs[CONFIG_INT_WARDEN_BANDAY]         = sConfig->GetIntDefault("Warden.BanDay", 0);
 
+    /** World of Warcraft Armory **/
+    m_bool_configs[CONFIG_ARMORY_ENABLE] = sConfig->GetBoolDefault("Armory.Enable", true);
+    /** World of Warcraft Armory **/
+
     sScriptMgr->OnConfigLoad(reload);
 }
 
